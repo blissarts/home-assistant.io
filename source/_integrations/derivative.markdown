@@ -49,12 +49,12 @@ unit_prefix:
   default: None
   type: string
 unit_time:
-  description: SI unit of time of the derivative. Available units are s, min, h, d.
+  description: SI unit of time of the derivative. Available units are s, min, h, d. If this parameter is set, the attribute **unit_of_measurement** will be set like x/y where x is the unit of the sensor given via the **source** parameter and y is the value of parameter.
   required: false
   default: h
   type: string
 unit:
-  description: Unit of Measurement to be used for the derivative.
+  description: Unit of Measurement to be used for the derivative. If this is set, the automatically set **unit_of_measurement** as explained above, will be overwritten by the value given here.
   required: false
   type: string
 time_window:
